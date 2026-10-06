@@ -5,7 +5,7 @@
 
 ### 文本导入导出
 
-```python
+```bash
 python re5_msg2txt.py <文件名或文件夹路径> # 导出时同步更新码表font00_j.tbl中的字宽
 python re5_txt2msg.py <文件名或文件夹路径>
 ```
@@ -27,7 +27,7 @@ OK
 
 可在脚本内配置合并文件路径，或通过参数传入。
 
-```python
+```bash
 python merge_txt.py 
 ```
 
@@ -35,7 +35,7 @@ python merge_txt.py
 
 检查txt中是否有文本块超出配置中指定的行数。
 
-```python
+```bash
 python line_check.py <文件夹路径>
 ```
 
@@ -43,7 +43,7 @@ python line_check.py <文件夹路径>
 
 根据指定字体和码表生成与`font00_j.tex`相同格式的字库贴图。
 
-```python
+```bash
 python generate_custom_dds.py
 ```
 
@@ -51,7 +51,7 @@ python generate_custom_dds.py
 
 根据指定字体和字符生成包含字宽的码表。
 
-```python
+```bash
 generate_custom_tbl.py
 ```
 
