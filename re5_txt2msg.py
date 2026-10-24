@@ -87,6 +87,10 @@ def process_single_msg(txt_input, msg_origin, msg_output, char_to_data):
             # 强制写入句末结束符 {0,1025}
             f.write(struct.pack('<HH', 0, 1025))
             
+        new_file_size = f.tell()
+        f.seek(8)
+        f.write(struct.pack('<I', new_file_size))
+            
     return True
 
 def main():
